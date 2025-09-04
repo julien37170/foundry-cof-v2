@@ -1,0 +1,23 @@
+{
+  "COFV2": {
+    "TEST": "Test",
+    "CHARACTER": "Character",
+    "NPC": "NPC",
+    "ITEM": "Item",
+    "ATTRIBUTE": {
+      "agi": "AGI",
+      "con": "CON",
+      "for": "STR",
+      "per": "PER",
+      "cha": "CHA",
+      "int": "INT",
+      "vol": "WIL"
+    },
+    "RESOURCE": {
+      "pv": "HP",
+      "dr": "RR",
+      "pc": "Luck",
+      "pm": "Mana"
+    }
+  }
+}
