@@ -1,0 +1,19 @@
+{
+  "id": "cof-v2",
+  "title": "Chroniques Oubliées Fantasy V2",
+  "description": "Système de jeu COF V2 pour Foundry VTT. Cette version est un squelette minimal servant de base au développement.",
+  "version": "0.1.0",
+  "author": "Julien",
+  "esmodules": [],
+  "styles": [],
+  "languages": [
+    { "lang": "fr-FR", "name": "Français", "path": "lang/fr-FR.json" },
+    { "lang": "en-US", "name": "English", "path": "lang/en-US.json" }
+  ],
+  "packs": [],
+  "minimumCoreVersion": "12",
+  "compatibleCoreVersion": "12",
+  "manifest": "",
+  "download": "",
+  "url": ""
+}
