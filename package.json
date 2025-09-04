@@ -2,6 +2,15 @@
   "name": "foundry-cof-v2",
   "version": "0.1.0",
   "description": "Squelette pour le système Chroniques Oubliées Fantasy V2 dans Foundry VTT.",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vite": "^4.0.0",
+    "vitest": "^0.34.0"
+  },
   "license": "MIT"
 }
