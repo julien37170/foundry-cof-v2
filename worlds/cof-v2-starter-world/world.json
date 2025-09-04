@@ -1,0 +1,12 @@
+{
+  "id": "cof-v2-starter-world",
+  "title": "COF V2 Starter World",
+  "description": "Monde d’exemple minimal pour le système Chroniques Oubliées Fantasy V2.",
+  "version": "0.1.0",
+  "system": "cof-v2",
+  "coreVersion": "12",
+  "minimumCoreVersion": "12",
+  "compatibleCoreVersion": "12",
+  "author": "Julien",
+  "packs": []
+}
