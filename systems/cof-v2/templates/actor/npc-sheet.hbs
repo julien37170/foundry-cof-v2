@@ -1,0 +1,41 @@
+<form class="cofv2 sheet actor npc flexcol" autocomplete="off">
+  <header class="sheet-header flexrow">
+    <h1>{{actor.name}}</h1>
+    <span class="sheet-subtitle">PNJ</span>
+  </header>
+  <section class="sheet-body flexcol">
+    <!-- Reuse the same layout as the character sheet for NPCs -->
+    <div class="attributes flexcol">
+      <h2>Caractéristiques</h2>
+      {{#each system.attributes as |attr key|}}
+        <div class="attribute flexrow" data-ability="{{key}}">
+          <label class="attribute-label">{{key}}</label>
+          <input type="number" name="system.attributes.{{key}}.value" value="{{attr.value}}"/>
+          <button type="button" class="roll-ability" data-ability="{{key}}">Tester</button>
+        </div>
+      {{/each}}
+    </div>
+    <div class="resources flexcol">
+      <h2>Ressources</h2>
+      <div class="resource flexrow">
+        <label>PV</label>
+        <input type="number" name="system.resources.pv.value" value="{{system.resources.pv.value}}"/> /
+        <input type="number" name="system.resources.pv.max" value="{{system.resources.pv.max}}"/>
+      </div>
+      <div class="resource flexrow">
+        <label>DR</label>
+        <input type="number" name="system.resources.dr.value" value="{{system.resources.dr.value}}"/>
+      </div>
+      <div class="resource flexrow">
+        <label>PC</label>
+        <input type="number" name="system.resources.pc.value" value="{{system.resources.pc.value}}"/> /
+        <input type="number" name="system.resources.pc.max" value="{{system.resources.pc.max}}"/>
+      </div>
+      <div class="resource flexrow">
+        <label>PM</label>
+        <input type="number" name="system.resources.pm.value" value="{{system.resources.pm.value}}"/> /
+        <input type="number" name="system.resources.pm.max" value="{{system.resources.pm.max}}"/>
+      </div>
+    </div>
+  </section>
+</form>
