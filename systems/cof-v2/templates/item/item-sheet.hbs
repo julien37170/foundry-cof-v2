@@ -1,0 +1,35 @@
+<form class="cofv2 sheet item flexcol" autocomplete="off">
+  <header class="sheet-header flexrow">
+    <h1>{{item.name}}</h1>
+    <span class="sheet-subtitle">Objet</span>
+  </header>
+  <section class="sheet-body flexcol">
+    <div class="field flexrow">
+      <label>Type</label>
+      <input type="text" name="type" value="{{item.type}}" disabled />
+    </div>
+    <div class="field flexcol">
+      <label>Description</label>
+      <textarea name="system.description" rows="6">{{system.description}}</textarea>
+    </div>
+    <!-- Example fields for spells or capacities could be added here -->
+    {{#if (eq item.type 'spell')}}
+      <div class="field flexrow">
+        <label>Coût PM</label>
+        <input type="number" name="system.pmCost" value="{{system.pmCost}}"/>
+      </div>
+      <div class="field flexrow">
+        <label>Test associé</label>
+        <input type="text" name="system.test" value="{{system.test}}"/>
+      </div>
+      <div class="field flexrow">
+        <label>Portée</label>
+        <input type="text" name="system.range" value="{{system.range}}"/>
+      </div>
+      <div class="field flexrow">
+        <label>Durée</label>
+        <input type="text" name="system.duration" value="{{system.duration}}"/>
+      </div>
+    {{/if}}
+  </section>
+</form>
