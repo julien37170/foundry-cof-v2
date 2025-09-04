@@ -1,0 +1,77 @@
+{
+  "Actor": {
+    "types": {
+      "character": {
+        "attributes": {
+          "agi": { "type": "Number", "value": 0 },
+          "con": { "type": "Number", "value": 0 },
+          "for": { "type": "Number", "value": 0 },
+          "per": { "type": "Number", "value": 0 },
+          "cha": { "type": "Number", "value": 0 },
+          "int": { "type": "Number", "value": 0 },
+          "vol": { "type": "Number", "value": 0 }
+        },
+        "resources": {
+          "pv": { "type": "Resource", "value": 10, "max": 10 },
+          "dr": { "type": "Number", "value": 1 },
+          "pc": { "type": "Resource", "value": 0, "max": 0 },
+          "pm": { "type": "Resource", "value": 0, "max": 0 }
+        },
+        "combat": {
+          "init": { "type": "String", "formula": "1d20 + @attributes.per.value" },
+          "def": {
+            "base": { "type": "Number", "value": 10 },
+            "armor": { "type": "Number", "value": 0 },
+            "shield": { "type": "Number", "value": 0 },
+            "misc": { "type": "Number", "value": 0 },
+            "total": { "type": "Number", "value": 10 }
+          },
+          "attacks": {
+            "melee": {
+              "va": { "type": "Number", "value": 0 },
+              "dm": { "type": "String", "value": "1d8 + @attributes.for.value" }
+            },
+            "ranged": {
+              "va": { "type": "Number", "value": 0 },
+              "dm": { "type": "String", "value": "1d8 + @attributes.agi.value" }
+            }
+          }
+        },
+        "identity": {
+          "peuple": { "type": "String", "value": "" },
+          "famille": { "type": "String", "value": "" },
+          "profil": { "type": "String", "value": "" },
+          "voies": { "type": "Array", "value": [] }
+        }
+      },
+      "npc": {
+        "attributes": {},
+        "resources": {},
+        "combat": {},
+        "identity": {}
+      }
+    }
+  },
+  "Item": {
+    "types": {
+      "capacity": {
+        "rank": { "type": "Number", "value": 1 },
+        "frequency": { "type": "String", "value": "libre" },
+        "tags": { "type": "Array", "value": [] }
+      },
+      "spell": {
+        "cost": { "type": "Number", "value": 0 },
+        "test": { "type": "String", "value": "" },
+        "effects": { "type": "String", "value": "" },
+        "duration": { "type": "String", "value": "" },
+        "range": { "type": "String", "value": "" }
+      },
+      "weapon": {},
+      "armor": {},
+      "gear": {},
+      "talent": {},
+      "voie": {},
+      "heritage": {}
+    }
+  }
+}
