@@ -1,0 +1,23 @@
+{
+  "COFV2": {
+    "TEST": "Test",
+    "CHARACTER": "Personnage",
+    "NPC": "PNJ",
+    "ITEM": "Objet",
+    "ATTRIBUTE": {
+      "agi": "AGI",
+      "con": "CON",
+      "for": "FOR",
+      "per": "PER",
+      "cha": "CHA",
+      "int": "INT",
+      "vol": "VOL"
+    },
+    "RESOURCE": {
+      "pv": "PV",
+      "dr": "DR",
+      "pc": "PC",
+      "pm": "PM"
+    }
+  }
+}
